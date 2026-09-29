@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会吃会练 - 科学饮食与高效训练</title>
+    <meta name="description" content="会吃会练是一款本地优先的健康饮食与训练管理应用，提供营养计算、饮食记录、训练计划与进度追踪。">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .brand {
+            width: 72px; height: 72px;
+            margin: 0 auto 20px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #FF6B00, #FF8533);
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 32px; font-weight: 800;
+            box-shadow: 0 8px 20px rgba(255,107,0,0.3);
+        }
+        h1 { font-size: 30px; font-weight: 800; color: #1a1a1a; text-align: center; margin-bottom: 8px; }
+        .subtitle { text-align: center; color: #888; font-size: 15px; margin-bottom: 32px; }
+        h2 {
+            font-size: 20px; font-weight: 600; color: #FF6B00;
+            margin-top: 32px; margin-bottom: 12px; padding-bottom: 8px;
+            border-bottom: 2px solid #FF6B00;
+        }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 16px; }
+        .card {
+            padding: 18px; border-radius: 10px;
+            background-color: #FAFAFA; border: 1px solid #eee;
+        }
+        .card h3 { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
+        .card p { font-size: 13px; color: #666; margin-bottom: 0; }
+        .links { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+        .links a {
+            padding: 10px 20px; border-radius: 8px;
+            background-color: #FFF3E0; color: #E65100;
+            font-size: 14px; font-weight: 600; text-decoration: none;
+        }
+        .links a:hover { background-color: #FFE0B2; }
+        .notice {
+            background-color: #FFF3E0; padding: 12px 16px; border-radius: 8px;
+            border-left: 4px solid #FF6B00; margin: 16px 0;
+        }
+        .notice p { margin-bottom: 0; color: #E65100; font-size: 14px; }
+        .footer {
+            margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;
+            text-align: center; color: #999; font-size: 13px;
+        }
+        a { color: #FF6B00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="brand">会</div>
+        <h1>会吃会练</h1>
+        <p class="subtitle">科学饮食 · 高效训练 · 数据只留在你自己的设备上</p>
+
+        <div class="notice">
+            <p><strong>隐私优先：</strong>本应用为纯本地应用，不需要注册账号，不收集手机号、邮箱等个人身份信息，所有饮食、训练与健康数据均加密存储在您的设备本地，不会上传到任何服务器。</p>
+        </div>
+
+        <h2>核心功能</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>精准营养计算</h3>
+                <p>基于 Mifflin-St Jeor 公式计算基础代谢与每日总消耗，按减脂／增肌目标自动分配碳水、蛋白质、脂肪。</p>
+            </div>
+            <div class="card">
+                <h3>食物库检索</h3>
+                <p>内置五万余条食物营养数据，支持中文、拼音全拼与首字母检索，可按分类浏览。</p>
+            </div>
+            <div class="card">
+                <h3>饮食记录</h3>
+                <p>按餐次记录每餐食物与份量，实时查看当日热量与三大营养素完成情况。</p>
+            </div>
+            <div class="card">
+                <h3>训练计划</h3>
+                <p>按训练分化生成周计划，记录每个动作的组数、次数与重量，查看训练趋势。</p>
+            </div>
+            <div class="card">
+                <h3>进度追踪</h3>
+                <p>体重、身体围度、进度照片与周报趋势，量化身体变化。</p>
+            </div>
+            <div class="card">
+                <h3>健康数据同步</h3>
+                <p>在您授权的情况下与苹果健康双向同步步数、体重、饮食与训练数据。</p>
+            </div>
+        </div>
+
+        <h2>数据导出与删除</h2>
+        <p>您可以随时在应用内「设置 › 数据管理」中将全部数据导出为 JSON 或 CSV 文件，也可以一键清除所有数据。卸载应用将永久删除本地数据，且无法恢复。</p>
+
+        <h2>相关链接</h2>
+        <div class="links">
+            <a href="./privacy.html">隐私政策</a>
+            <a href="./terms.html">用户协议</a>
+            <a href="./support.html">支持与反馈</a>
+        </div>
+
+        <div class="notice">
+            <p><strong>免责声明：</strong>本应用提供的饮食与运动建议仅供参考，不构成医疗诊断或治疗建议。请在医生或专业营养师指导下进行饮食或训练计划。</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 会吃会练 · 开发者：尼森与海</p>
+            <p>联系邮箱：<a href="mailto:huayanming2019@gmail.com">huayanming2019@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
