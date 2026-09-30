@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Hui Chi Hui Lian</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6; color: #333; background-color: #f5f5f7; padding: 20px;
+        }
+        .container {
+            max-width: 800px; margin: 0 auto; background-color: #fff;
+            padding: 40px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; text-align: center; }
+        .subtitle { text-align: center; color: #888; font-size: 14px; margin-bottom: 32px; }
+        h2 {
+            font-size: 20px; font-weight: 600; color: #F37021;
+            margin-top: 32px; margin-bottom: 12px; padding-bottom: 8px;
+            border-bottom: 2px solid #F37021;
+        }
+        h3 { font-size: 16px; font-weight: 600; color: #333; margin-top: 20px; margin-bottom: 8px; }
+        p { margin-bottom: 12px; color: #555; }
+        ul, ol { margin-left: 24px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; color: #555; }
+        .contact {
+            background-color: #FFF3E0; padding: 16px 20px; border-radius: 8px;
+            border-left: 4px solid #F37021; margin: 16px 0;
+        }
+        .contact p { margin-bottom: 6px; color: #E65100; }
+        .contact p:last-child { margin-bottom: 0; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background-color: #FAFAFA; color: #1a1a1a; font-weight: 600; }
+        td { color: #555; }
+        .footer {
+            margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;
+            text-align: center; color: #999; font-size: 13px;
+        }
+        a { color: #F37021; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lang-switch { text-align: right; font-size: 13px; margin-bottom: 4px; }
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="lang-switch"><a href="./support.html">简体中文</a></p>
+        <h1>Support &amp; Feedback</h1>
+        <p class="subtitle">Questions or suggestions? We'd love to hear from you.</p>
+
+        <h2>1. Contact</h2>
+        <div class="contact">
+            <p><strong>Email:</strong> <a href="mailto:huayanming2019@gmail.com">huayanming2019@gmail.com</a></p>
+            <p><strong>In-app feedback:</strong> Settings › Help &amp; Feedback › Feedback</p>
+            <p><strong>Response time:</strong> within 15 working days</p>
+        </div>
+        <p>To help us locate the issue, please include the app version (Settings › About › Version), iOS version, exact steps, and screenshots if possible.</p>
+
+        <h2>2. FAQ</h2>
+
+        <h3>1. Where is my data stored? Is it uploaded?</h3>
+        <p>Everything is stored locally on your device with the Hive database; sensitive health data is AES-256 encrypted. The App has no servers, uploads nothing, and embeds no third-party analytics or advertising SDKs.</p>
+
+        <h3>2. How do I move data to a new phone?</h3>
+        <p>Export data (JSON) under "Settings › Data Management" on the old device, then restore from the same place after installing on the new one. Uninstalling permanently deletes local data with no recovery — always export before switching devices.</p>
+
+        <h3>3. How do I delete all my data?</h3>
+        <p>"Settings › Data Management › Clear all data" wipes everything in one tap; uninstalling does the same. Both are irreversible.</p>
+
+        <h3>4. How is my daily calorie target calculated?</h3>
+        <p>BMR via Mifflin-St Jeor, multiplied by your activity factor for TDEE, then adjusted for your goal (e.g. −500 kcal for fat loss, +300 kcal for muscle gain; fat-loss floors apply). Carbs, protein, and fat are allocated within the total.</p>
+
+        <h3>5. Is membership a subscription? Does it auto-renew? Do I need to cancel?</h3>
+        <p>No. It is a one-time, non-consumable Lifetime purchase (CNY 138; the App Store price prevails) unlocking all membership features forever — no subscription period, no auto-renewal, no further charges, nothing to cancel. For refunds, request them from Apple via the App Store.</p>
+
+        <h3>6. I already bought membership. How do I restore it on a new device?</h3>
+        <p>Tap "Restore Purchases" on the membership page using the same Apple ID.</p>
+
+        <h3>7. Why don't I see synced data in Apple Health?</h3>
+        <p>Check permissions under "Settings › Health › Data Access &amp; Devices › Hui Chi Hui Lian", or re-authorize in "Profile › Apple Health Sync". Without authorization, the App reads and writes no health data.</p>
+
+        <h3>8. Is the food nutrition data accurate?</h3>
+        <p>Food data is compiled from public references and may contain errors; it is for reference only. For packaged foods, the product nutrition label prevails. Please email us about obvious mistakes and we will verify and fix them.</p>
+
+        <h2>3. Feature map</h2>
+        <table>
+            <tr><th>Feature</th><th>Location</th></tr>
+            <tr><td>Export / restore data</td><td>Settings › Data Management</td></tr>
+            <tr><td>Clear all data</td><td>Settings › Data Management</td></tr>
+            <tr><td>Apple Health sync</td><td>Profile › Apple Health Sync</td></tr>
+            <tr><td>Reminder times</td><td>Settings › Notifications</td></tr>
+            <tr><td>Units (metric/imperial)</td><td>Settings › Units</td></tr>
+            <tr><td>Feedback</td><td>Settings › Help &amp; Feedback</td></tr>
+            <tr><td>Privacy / Terms</td><td>Settings › About</td></tr>
+        </table>
+
+        <h2>4. Related pages</h2>
+        <ul>
+            <li><a href="./index.en.html">App home</a></li>
+            <li><a href="./privacy.en.html">Privacy Policy</a></li>
+            <li><a href="./terms.en.html">Terms of Service</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2026 Hui Chi Hui Lian · Developer: Hua Yanming (brand: Nisen &amp; Sea)</p>
+        </div>
+    </div>
+</body>
+</html>
